@@ -3,11 +3,11 @@
 
 ## 1. 코드 설명
 
-- [KEMDy20](https://nanum.etri.re.kr/share/kjnoh/KEMDy20?lang=ko_KR) 데이터셋은 전체 데이터인 13,462개 사용.
+- [KEMDy20](https://nanum.etri.re.kr/share/kjnoh/KEMDy20?lang=ko_KR) 데이터셋은 전체 데이터 13,462개 사용.
 - 발화 세그먼트 텍스트와 중복 레이블이 포함된 레이블을 이용한 멀티 레이블 데이터 생성.
 - 텍스트에 대해 태깅을 제거하는 과정 진행 후 학습에 이용.
 - 학습과 평가에서 사용되는 데이터셋은 8:2로 분배하여 사용.
-- 레이블이 학습과 평가 모델에 고르게 분배되도록 sklearn의 MultilabelStratifiedKFold 를 이용하여 5-fold crossvalidation dataset 생성.
+- 레이블이 학습과 평가 과정에 고르게 분배되도록 sklearn의 MultilabelStratifiedKFold 를 이용하여 5-fold crossvalidation dataset 생성.
 
 #### Installed Version
 
