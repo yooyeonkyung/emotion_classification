@@ -35,6 +35,8 @@ python main.py
 ```
 
 임계값 획득 jupyternotebook - (2)
+
+
 threshold.ipynb
 
 (2)의 임계값을 적용한 랜덤 배치 순서 적용 감정 분류 학습&평가 모델 실행 - (3)
@@ -49,6 +51,7 @@ python scoring.py
 
 
 (4)의 스코어 값을 이용한 커리큘럼 데이터 획득 jupyternotebook - (5)
+
 curriculum_data.ipynb
 
 임계값을 적용한 커리큘럼 순서 적용 감정 분류 학습&평가 모델 실행 - (6)
