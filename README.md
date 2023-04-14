@@ -10,13 +10,21 @@
  -레이블이 학습과 평가 모델에 고르게 분배되도록 sklearn의 MultilabelStratifiedKFold 를 이용하여 5-fold crossvalidation dataset 생성.
 
 torch: 1.10.0
+
 python: 3.7.13
+
 numpy: 1.19.5
+
 pandas: 1.3.5
+
 transformers: 4.18.0
+
 gluonnlp: 0.10.0
+
 scikit-learn: 1.0.2
+
 matplotlib: 3.5.3
+
 
 How to install KoBERT
 ```
