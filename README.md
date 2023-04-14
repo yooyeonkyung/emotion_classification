@@ -39,9 +39,7 @@ pip install 'git+https://github.com/SKTBrain/KoBERT.git#egg=kobert_tokenizer&sub
 -- th False # threshold 적용 여부
 ```
 
-#### (1)
-
-  랜덤 배치 순서 감정 분류 학습&평가 모델 실행
+#### 랜덤 배치 순서 감정 분류 학습&평가 모델 실행 - (1)
 
   train_data: kem20_tr0.csv / val_data: kem20_vl0.csv
   ```
@@ -49,9 +47,7 @@ pip install 'git+https://github.com/SKTBrain/KoBERT.git#egg=kobert_tokenizer&sub
   ```
 
 
-#### (2)
-
-  (1) 과정에서 성능이 가장 좋은 모델의 파라미터값을 이용한 임계값 획득 jupyternotebook
+#### (1) 과정에서 성능이 가장 좋은 모델의 파라미터값을 이용한 임계값 획득 jupyternotebook - (2)
 
 ```
 threshold.ipynb
