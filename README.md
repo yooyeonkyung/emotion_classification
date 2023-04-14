@@ -20,7 +20,6 @@ transformers: 4.18.0
 gluonnlp: 0.10.0
 scikit-learn: 1.0.2
 matplotlib: 3.5.3
-
 ```
 
 #### How to install KoBERT
