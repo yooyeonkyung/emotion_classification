@@ -31,40 +31,60 @@ pip install 'git+https://github.com/SKTBrain/KoBERT.git#egg=kobert_tokenizer&sub
 
 ## 2. 코드 실행방식에 대한 설명
 
-batch size 8, epoch 10 적용
+#### Configs default value
+```
+--batch_size 8
+-- epochs 10
+-- shuffle True
+-- th False # threshold 적용 여부
+```
 
-- 랜덤 배치 순서 감정 분류 학습&평가 모델 실행 - (1)
+(1) 랜덤 배치 순서 감정 분류 학습&평가 모델 실행
+  train_data: kem20_tr0.csv
+  val_data: kem20_vl0.csv
+  
   ```
   python main.py
   ```
 
 
-- 임계값 획득 jupyternotebook - (2)
+(2) 성능이 가장 좋은 (1)의 모델 파라미터값을 이용한 임계값 획득 jupyternotebook
 
 
 threshold.ipynb
 
 
-- (2)의 임계값을 적용한 랜덤 배치 순서 적용 감정 분류 학습&평가 모델 실행 - (3)
+(3) (2)의 임계값을 적용한 랜덤 배치 순서 적용 감정 분류 학습&평가 모델 실행
 
+   train_data: kem20_tr0.csv
+   val_data: kem20_vl0.csv
 
 ```
 python main.py --th True
 ```
 
 
-- (3)을 통해 성능이 우수한 모델의 파라미터를 사용하여 랜덤 배치 기준 커리큘럼 스코어 값 코드 실행 - (4)
+(4) (3)을 통해 성능이 우수한 모델의 파라미터를 사용하여 랜덤 배치 기준 커리큘럼 스코어 값 코드 실행
+
+  kemdy20: kem20_tr0.csv
+  
 ```
-python scoring.py
+python scoring.py # score_0.csv
 ```
 
 
-- (4)의 스코어 값을 이용한 커리큘럼 데이터 획득 jupyternotebook - (5)
+(5) 커리큘럼 스코어 값을 이용한 커리큘럼 데이터 획득 jupyternotebook
 
+  score: score_0.csv
+  kemdy20: kem20_tr0.csv
+  
 curriculum_data.ipynb
 
 
-- 임계값을 적용한 커리큘럼 순서 적용 감정 분류 학습&평가 모델 실행 - (6)
+(6) 임계값을 적용한 커리큘럼 순서 적용 감정 분류 학습&평가 모델 실행
+  train_data: kem20_h2l_0.csv
+  val_data: kem20_vl0.csv
+  
 ```
 python main.py --shuffle False --th True
 ```
