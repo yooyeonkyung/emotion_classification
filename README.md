@@ -67,7 +67,7 @@ threshold.ipynb
   kemdy20: kem20_tr0.csv
   
   ```
-  python scoring.py # score_0.csv
+  python scoring.py  # score_0.csv
   ```
 
 
@@ -75,7 +75,7 @@ threshold.ipynb
 
   score: score_0.csv / kemdy20: kem20_tr0.csv
   ```
-  curriculum_data.ipynb
+  curriculum_data.ipynb  # kem20_h2l_0.csv
   ```
 
 ##### (6) 임계값을 적용한 커리큘럼 순서 적용 감정 분류 학습&평가 모델 실행
