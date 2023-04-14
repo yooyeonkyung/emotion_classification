@@ -50,18 +50,18 @@ pip install 'git+https://github.com/SKTBrain/KoBERT.git#egg=kobert_tokenizer&sub
 
 (2) - (1) 과정에서 성능이 가장 좋은 모델의 파라미터값을 이용한 임계값 획득 jupyternotebook
 
-
+```
 threshold.ipynb
-
+```
 
 (3) - (2)의 임계값을 적용한 랜덤 배치 순서 적용 감정 분류 학습&평가 모델 실행
 
    train_data: kem20_tr0.csv
    val_data: kem20_vl0.csv
 
-```
-python main.py --th True
-```
+  ```
+  python main.py --th True
+  ```
 
 
 (4) - (3)을 통해 성능이 우수한 모델의 파라미터를 사용하여 랜덤 배치 기준 커리큘럼 스코어 값 코드 실행
@@ -77,9 +77,9 @@ python main.py --th True
 
   score: score_0.csv
   kemdy20: kem20_tr0.csv
-  
+  ```
   curriculum_data.ipynb
-
+  ```
 
 (6) - 임계값을 적용한 커리큘럼 순서 적용 감정 분류 학습&평가 모델 실행
 
