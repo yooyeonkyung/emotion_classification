@@ -26,7 +26,7 @@ scikit-learn: 1.0.2
 matplotlib: 3.5.3
 
 
-How to install KoBERT
+#### How to install KoBERT
 ```
 pip install 'git+https://github.com/SKTBrain/KoBERT.git#egg=kobert_tokenizer&subdirectory=kobert_hf'
 ```
