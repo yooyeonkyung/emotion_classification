@@ -9,6 +9,8 @@
 - 데이터셋 학습과정에서 학습과 평가에서 사용되는 데이터셋은 8:2로 분배하여 사용.
  -레이블이 학습과 평가 모델에 고르게 분배되도록 sklearn의 MultilabelStratifiedKFold 를 이용하여 5-fold crossvalidation dataset 생성.
 
+#### Installed Version
+
 torch: 1.10.0
 
 python: 3.7.13
