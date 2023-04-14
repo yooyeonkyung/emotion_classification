@@ -39,10 +39,11 @@ pip install 'git+https://github.com/SKTBrain/KoBERT.git#egg=kobert_tokenizer&sub
 -- th False # threshold 적용 여부
 ```
 
-####(1)
+#### (1)
   랜덤 배치 순서 감정 분류 학습&평가 모델 실행
 
   train_data: kem20_tr0.csv
+  
   val_data: kem20_vl0.csv
   ```
   python main.py
