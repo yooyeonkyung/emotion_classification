@@ -82,6 +82,7 @@ curriculum_data.ipynb
 
 
 (6) 임계값을 적용한 커리큘럼 순서 적용 감정 분류 학습&평가 모델 실행
+
   train_data: kem20_h2l_0.csv
   val_data: kem20_vl0.csv
   
