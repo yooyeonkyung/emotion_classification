@@ -34,9 +34,9 @@ pip install 'git+https://github.com/SKTBrain/KoBERT.git#egg=kobert_tokenizer&sub
 batch size 8, epoch 10 적용
 
 - 랜덤 배치 순서 감정 분류 학습&평가 모델 실행 - (1)
-```
-python main.py
-```
+  ```
+  python main.py
+  ```
 
 
 - 임계값 획득 jupyternotebook - (2)
