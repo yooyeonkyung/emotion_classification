@@ -38,6 +38,7 @@ RANDOM_SEED = 11
 
 #### Make new directory
   saved/
+  
   result/
 
 #### Configs default value
