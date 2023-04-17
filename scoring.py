@@ -11,6 +11,9 @@ import numpy as np
 import random
 from tqdm import tqdm
 
+# model weight directory
+dir_name = './' # 사용하고자 하는 모델의 weight 파일 경로
+
 # random seed 고정
 RANDOM_SEED = 11
 random.seed(RANDOM_SEED)
@@ -28,7 +31,7 @@ bert_model = BertModel.from_pretrained('skt/kobert-base-v1', return_dict=False)
 vocab = nlp.vocab.BERTVocab.from_sentencepiece(tokenizer.vocab_file, padding_token='[PAD]')
 
 model = Linearbert(bert_model)
-model.load_state_dict(torch.load('./saved/230413_10/230413_10_ep5_model_save.pt', map_location='cuda:1'))
+model.load_state_dict(torch.load(dir_name, map_location='cuda:1'))
 model = model.to(device)
 kemdy20 = pd.read_csv('./data/KEMDy20/kem20_tr0.csv')
 
