@@ -36,6 +36,10 @@ RANDOM_SEED = 11
 
 ## 2. 코드 실행방식에 대한 설명
 
+#### Make new directory
+  saved/
+  result/
+
 #### Configs default value
 ```
 --batch_size 8
