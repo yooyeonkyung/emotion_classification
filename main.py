@@ -4,8 +4,7 @@ from torch.utils.data import DataLoader
 from kobert_tokenizer import KoBERTTokenizer
 from data.dataset import Sentiment
 from core.model import Linearbert
-from utils.wrapper import train_model
-from utils.wrapper_1 import train_model_1
+from utils.wrapper_1 import train_model
 
 import gluonnlp as nlp
 import pandas as pd
@@ -23,7 +22,7 @@ torch.cuda.manual_seed(RANDOM_SEED)
 torch.backends.cudnn.deterministic = True
 
 # GPU 사용
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 
 # KoBERT
 tokenizer = KoBERTTokenizer.from_pretrained('skt/kobert-base-v1')
@@ -33,22 +32,19 @@ for param in bert_model.parameters(): # KoBERT freeze
 vocab = nlp.vocab.BERTVocab.from_sentencepiece(tokenizer.vocab_file, padding_token='[PAD]')
 
 def main(configs):
-    
-    # curriculum data
-    train_data = pd.read_csv('./data/curriculum/kem20_h2l_0.csv')
-    
-    # train/ test data
-    # train_data = pd.read_csv('./data/KEMDy20/kem20_tr0.csv')
-    test_data = pd.read_csv('./data/KEMDy20/kem20_te0.csv')
-    
+  
+    train_data = pd.read_csv('/home/ykyoo/yeonk/emotion_classification/data/curriculum/kem20_l2h_4.csv')
+    # train_data = pd.read_csv('/home/ykyoo/yeonk/emotion_classification/data/KEMDy20/kem20_tr4.csv')
+    val_data = pd.read_csv('./data/KEMDy20/kem20_vl0.csv') 
+       
     print(len(train_data))
-    print(len(test_data))
+    print(len(val_data))
 
     tr_data = Sentiment(train_data)
-    te_data = Sentiment(test_data)
+    va_data = Sentiment(val_data)
 
     train_dataloader = DataLoader(tr_data, configs.batch_size, shuffle=configs.shuffle) # curriculum 경우: False
-    test_dataloader = DataLoader(te_data, configs.batch_size, shuffle=False)
+    val_dataloader = DataLoader(va_data, configs.batch_size, shuffle=False)
 
     if configs.mode == "train":
         if train_data is None:
@@ -59,14 +55,11 @@ def main(configs):
 
         model = Linearbert(bert_model)
         model = model.to(device)
-        
-        if configs.th == False:
-            train_model(model, train_dataloader, test_dataloader, configs.epochs)
-        else: train_model_1(model, train_dataloader, test_dataloader, configs.epochs)
+
+        train_model(model, train_dataloader, val_dataloader, configs.epochs)
 
         finish_time = datetime.now()
         print(f"\n[FINISH] {finish_time:%Y-%m-%d @ %H:%M:%S} (user time: {finish_time - start_time})\n")
-    
 
 
 
