@@ -36,6 +36,11 @@ RANDOM_SEED = 11
 
 ## 2. 코드 실행방식에 대한 설명
 
+### 전처리 코드
+data/preprocessing.ipynb
+전처리에 필요한 /text_data 파일은 크기가 커서 업로드 하지 못하였음.
+파일이 필요할시, yamgang1101@seoultech.ac.kr 로 이메일 요망.
+
 #### Make new directory
   saved/
   
