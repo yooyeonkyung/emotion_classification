@@ -13,7 +13,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 tokenizer = KoBERTTokenizer.from_pretrained('skt/kobert-base-v1')
 
-date = '0414_2' # 생성파일 명
+date = '0412' # 생성파일 명
 
 
 def get_new_output(out):
