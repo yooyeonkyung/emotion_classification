@@ -1,0 +1,26 @@
+Best Score: epoch 1 / 0.884
+
+======== Epoch 1 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.374
+  Training epoch took: 0:00:22
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.687, HAPPY(행복) F1: 0.720, SURPRISE(놀람) F1: 0.937, ANGER(분노) F1: 0.982
+ DISGUST(혐오) F1: 0.936, SAD(슬픔) F1: 0.970, FEAR(공포) F1: 0.957
+ Average F1 Score: 0.884
+
+======== Epoch 2 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.352
+  Training epoch took: 0:00:22
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.650, HAPPY(행복) F1: 0.718, SURPRISE(놀람) F1: 0.603, ANGER(분노) F1: 0.716
+ DISGUST(혐오) F1: 0.934, SAD(슬픔) F1: 0.786, FEAR(공포) F1: 0.506
+ Average F1 Score: 0.702
+
+======== Epoch 3 /10 ========
+ :: Training Process :: 

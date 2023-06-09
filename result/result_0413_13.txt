@@ -1,0 +1,113 @@
+Best Score: epoch 2 / 0.875
+
+======== Epoch 1 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.369
+  Training epoch took: 0:00:22
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.669, HAPPY(행복) F1: 0.656, SURPRISE(놀람) F1: 0.936, ANGER(분노) F1: 0.984
+ DISGUST(혐오) F1: 0.924, SAD(슬픔) F1: 0.970, FEAR(공포) F1: 0.947
+ Average F1 Score: 0.869
+
+======== Epoch 2 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.348
+  Training epoch took: 0:00:22
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.669, HAPPY(행복) F1: 0.704, SURPRISE(놀람) F1: 0.936, ANGER(분노) F1: 0.984
+ DISGUST(혐오) F1: 0.914, SAD(슬픔) F1: 0.970, FEAR(공포) F1: 0.949
+ Average F1 Score: 0.875
+
+======== Epoch 3 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.336
+  Training epoch took: 0:00:22
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.669, HAPPY(행복) F1: 0.642, SURPRISE(놀람) F1: 0.935, ANGER(분노) F1: 0.984
+ DISGUST(혐오) F1: 0.940, SAD(슬픔) F1: 0.968, FEAR(공포) F1: 0.949
+ Average F1 Score: 0.870
+
+======== Epoch 4 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.323
+  Training epoch took: 0:00:22
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.662, HAPPY(행복) F1: 0.127, SURPRISE(놀람) F1: 0.936, ANGER(분노) F1: 0.984
+ DISGUST(혐오) F1: 0.942, SAD(슬픔) F1: 0.970, FEAR(공포) F1: 0.687
+ Average F1 Score: 0.758
+
+======== Epoch 5 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.314
+  Training epoch took: 0:00:22
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.669, HAPPY(행복) F1: 0.557, SURPRISE(놀람) F1: 0.935, ANGER(분노) F1: 0.984
+ DISGUST(혐오) F1: 0.943, SAD(슬픔) F1: 0.970, FEAR(공포) F1: 0.931
+ Average F1 Score: 0.856
+
+======== Epoch 6 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.307
+  Training epoch took: 0:00:23
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.666, HAPPY(행복) F1: 0.444, SURPRISE(놀람) F1: 0.935, ANGER(분노) F1: 0.984
+ DISGUST(혐오) F1: 0.915, SAD(슬픔) F1: 0.970, FEAR(공포) F1: 0.604
+ Average F1 Score: 0.788
+
+======== Epoch 7 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.296
+  Training epoch took: 0:00:23
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.665, HAPPY(행복) F1: 0.406, SURPRISE(놀람) F1: 0.936, ANGER(분노) F1: 0.984
+ DISGUST(혐오) F1: 0.830, SAD(슬픔) F1: 0.970, FEAR(공포) F1: 0.770
+ Average F1 Score: 0.794
+
+======== Epoch 8 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.289
+  Training epoch took: 0:00:23
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.672, HAPPY(행복) F1: 0.397, SURPRISE(놀람) F1: 0.929, ANGER(분노) F1: 0.984
+ DISGUST(혐오) F1: 0.940, SAD(슬픔) F1: 0.970, FEAR(공포) F1: 0.730
+ Average F1 Score: 0.803
+
+======== Epoch 9 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.282
+  Training epoch took: 0:00:23
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.678, HAPPY(행복) F1: 0.255, SURPRISE(놀람) F1: 0.935, ANGER(분노) F1: 0.984
+ DISGUST(혐오) F1: 0.904, SAD(슬픔) F1: 0.970, FEAR(공포) F1: 0.858
+ Average F1 Score: 0.798
+
+======== Epoch 10 /10 ========
+ :: Training Process :: 
+
+  Average training loss: 0.275
+  Training epoch took: 0:00:22
+
+---------------------------------------------------------------------
+ NEUTRAL(중립) F1: 0.671, HAPPY(행복) F1: 0.357, SURPRISE(놀람) F1: 0.935, ANGER(분노) F1: 0.984
+ DISGUST(혐오) F1: 0.833, SAD(슬픔) F1: 0.968, FEAR(공포) F1: 0.862
+ Average F1 Score: 0.801
+
+ -- Training complete -- 
